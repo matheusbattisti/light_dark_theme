@@ -10,14 +10,17 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/scripts.js" defer></script>
   </head>
   <body>
     <header>
       <h2>Light and Dark</h2>
       <div>
-        <input type="checkbox" id="change-theme" />
-        <i class="bi bi-sun"></i>
-        <i class="bi bi-moon"></i>
+        <input type="checkbox" name="change-theme" id="change-theme" />
+        <label for="change-theme">
+          <i class="bi bi-sun"></i>
+          <i class="bi bi-moon"></i
+        ></label>
       </div>
     </header>
     <main>
@@ -27,17 +30,17 @@
           <img src="img/tenis.png" alt="Tenis" />
         </div>
         <div class="card-details">
-          <h2>Tenis Nike</h2>
-          <p>Excelente para corridas</p>
-          <p>
+          <h2>Tênis Nike</h2>
+          <p class="subtitle">Excelente para corridas</p>
+          <p class="description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
             officiis esse dolor eveniet quae quasi, similique quisquam? Maiores
             cum eaque reprehenderit nostrum, quas accusantium, commodi eius eos
             consequuntur, dolores hic.
           </p>
-          <div>
-            <span>R$299,90</span>
-            <button>Comprar</button>
+          <div class="price-container">
+            <span class="price">R$299,90</span>
+            <button class="btn">Comprar</button>
           </div>
         </div>
       </div>

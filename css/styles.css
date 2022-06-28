@@ -2,11 +2,27 @@
   font-family: Helvetica;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 html,
 body {
   height: 100%;
+  background-color: #eceff1;
+  transition: 0.3s;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.bi {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.bi-moon {
+  display: none;
 }
 
 header {
@@ -20,8 +36,6 @@ header {
 }
 
 main {
-  background-color: #eceff1;
-  height: 100%;
   display: flex;
   justify-content: center;
 }
@@ -30,7 +44,6 @@ main {
   margin-top: 4rem;
   display: flex;
   width: 60%;
-  height: 60%;
   background-color: #ffffff;
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
 }
@@ -39,6 +52,8 @@ main {
   padding: 2rem;
   width: 50%;
   position: relative;
+  background-color: #eff7fc;
+  overflow: visible;
 }
 
 .card-image span {
@@ -47,13 +62,88 @@ main {
 }
 
 .card img {
-  width: 600px;
-  transform: rotate(-30deg);
+  width: 130%;
+  transform: rotate(-25deg);
   position: absolute;
-  right: 2rem;
+  right: -1rem;
+  top: 10rem;
 }
 
 .card-details {
   width: 50%;
   padding: 2rem;
+}
+
+.card-details h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  color: #444;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.description {
+  line-height: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.price-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.btn {
+  background-color: #444;
+  width: 7rem;
+  height: 3rem;
+  border: none;
+  border-radius: 3rem;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* Dark theme */
+.dark,
+.dark header {
+  background-color: #263238;
+  color: #fff;
+}
+
+.dark .bi-sun {
+  display: none;
+}
+
+.dark .bi-moon {
+  display: block;
+}
+
+.dark .card {
+  background-color: #37474f;
+}
+
+.dark .card-image {
+  background-color: #273035;
+}
+
+.dark .subtitle {
+  color: #67b4f3;
+}
+
+.dark .description {
+  color: #2196f3;
+}
+
+.dark .btn {
+  background-color: #67b4f3;
 }
